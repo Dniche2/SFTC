@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+
+.icon {
+  margin: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  width: 20px;
+  height: 650px;
+  background-color: black;
+  border: 8px solid white;
+}
+

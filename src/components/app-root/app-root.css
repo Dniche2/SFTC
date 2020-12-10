@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+header {
+  background: #ffa500;
+  columns:white;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin: 0px 0px 0px 12px;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: black;
+  padding: 0 12px;
+}
+
+.my-components {
+  margin-bottom: 0;
+  display: flex;
+
+}
+.slide-menu {
+  order: 0;
+}
+.text-redactor {
+  order: 3;
+}
+.holst-for-presentation {
+  order: 1;
+}

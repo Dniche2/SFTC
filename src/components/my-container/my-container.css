@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+.container {
+  height: 100px;
+  width: 100px;
+  border: 10px solid white;
+  background-image: url(https://psv4.userapi.com/c856436/u236079625/docs/d2/12c3f1f4b693/136oarzhatzhamarll.gif?extra=rqMyEdQoEt0UMUSgfl6a-QDdaTnz4Av-8uVIn2HpWK8rmrOeoKEUkvg0X9D669QgAlBqhdmN1jmXELHnozaBf22BaWeqTwiI-eF0Rv5sc03BGbHbcQuGyrtS5gNv-n9k_RLbXlmZdPkuuu8FYMw2EuXp3A);
+  background-size: cover;
+  position: absolute;
+  cursor: move;
+  box-shadow:  8px 16px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
