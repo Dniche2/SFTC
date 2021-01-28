@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" type = "module"></script>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div>
+        <header>
+          <h1>Livrezon Create Slides</h1>
+        </header>
+    </div>
+    <my-menu class="my-menu">
+        <div class="createslide">
+            <button id='btnSlide'>cоздать слайд</button>
+            <div class="createslide-content" id='slideContent'>
+                <button id="contacts"><img src="image1.jpg" width="250px" height="160px"></button>
+                <button id="text"><img src="image2.jpg" width="250px" height="160px"></button>
+                <button id="withPictures"><img src="image3.jpg" width="250px" height="160px"></button>
+                <button id="list"><img src="image4.jpg" width="250px" height="160px"></button>
+                <button id="video"><img src="image5.jpg" width="250px" height="160px"></button>
+                <button id="book"><img src="image6.jpg" width="250px" height="160px"></button>               
+            </div>
+        </div>
+        <div>
+            <button class="deleteSlide">удалить</button>
+        </div>
+        <div>
+            <button class="downloadSlide">загрузить</button>
+        </div>        
+    </my-menu>
+    <div hidden id="slideContacts"><img src="image1.jpg" width="640" height="480" ></div>
+    <div hidden id="slideText"><img src="image2.jpg" width="640" height="480"></div>
+    <div hidden id="slideWithPictures"><img src="image3.jpg" width="640" height="480"></div>
+    <div hidden id="slideList"><img src="image4.jpg" width="640" height="480"></div>
+    <div hidden id="slideVideo"><img src="image5.jpg" width="640" height="480"></div>
+    <div hidden id="slideBook"><img src="image6.jpg" width="640" height="480"></div>
+    </body>
+    <script type="module">
+        import {LitElement, html} from 'https://unpkg.com/lit-element?module';
+        btnSlide.onclick = function () {
+            let createSlide = document.getElementById("slideContent").classList.toggle("show");
+        }
+        contacts.onclick = function () {
+            let afterClickOnContacts = document.getElementById("slideContacts").removeAttribute("hidden")
+        }
+        text.onclick = function () {
+            let afterClickOnContacts = document.getElementById("slideText").removeAttribute("hidden")
+        }
+        withPictures.onclick = function () {
+            let afterClickOnContacts = document.getElementById("slideWithPictures").removeAttribute("hidden")
+        }
+        list.onclick = function () {
+            let afterClickOnContacts = document.getElementById("slideList").removeAttribute("hidden")
+        }
+        video.onclick = function () {
+            let afterClickOnContacts = document.getElementById("slideVideo").removeAttribute("hidden")
+        }
+        book.onclick = function () {
+            let afterClickOnContacts = document.getElementById("slideBook").removeAttribute("hidden")
+        }
+    </script>
+</body>
+</html>
